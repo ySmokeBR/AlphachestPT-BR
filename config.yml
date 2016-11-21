@@ -1,0 +1,42 @@
+#Comando para prender o player em uma cadeia
+#use {player} para pegar o nome do player
+#Necessario o essentials para setar uma jaula e colocar o nome da jaula do lado de {player}!
+Comando:
+    Prender: 'jail {player} tela'
+    Liberar: 'unjail {player}'
+#Menssage para o player que esta sendo prezo
+#{Admin} vai pegar o nome da admin que usou o comando para prender o player
+#{player} para pegar o nome do jogador!
+Menssage:
+- '&b&m------------------=&9 [&bS&7peedy&bP&7v&bP&9] &b&m=------------------'
+- '&c'
+- '&cO &4&l{Admin} &cestar pedindo sua tela nao desconecte ou sera banido - Passe seu &b&lSkype&c no chat ou faça um upload de uma imagem e mande o link, você tem 5 minutos ou sera banido!'
+- '&c'
+- '&b&m------------------=&9 [&bS&7peedy&bP&7v&bP&9] &b&m=------------------'
+
+#Menssage global para os players ver quem esta sendo prezo
+#{Admin} vai pegar o nome da admin que usou o comando para prender o player
+#{player} para pegar o nome do jogador!
+Broadcast: '&a{Admin} &festa pegando tela do(a): &a{player}'
+#Mensagem que vai mandar quando ele desconetar sem passar tela
+Mensagem_Desconectou: '&a{player} &fDesconecou sem passar tela e foi banido!'
+#Menssage para o player que esta sendo solto
+#{Admin} vai pegar o nome da admin que usou o comando para liberar o player
+#{player} para pegar o nome do jogador!
+Menssage2:
+- '&b&m------------------=&9 [&bS&7peedy&bP&7v&bP&9] &b&m=------------------'
+- '&c'
+- '&cO &4&l{Admin} &cParabêns você não é hacker, jogue sempre limpo, hacker é para os fracos!'
+- '&c'
+- '&b&m------------------=&9 [&bS&7peedy&bP&7v&bP&9] &b&m=------------------'
+
+#Menssage global para os players ver quem esta sendo solto
+#{Admin} vai pegar o nome da admin que usou o comando para liberar o player
+#{player} para pegar o nome do jogador!
+Broadcast2: '&a{Admin} &fliberou o(a): &a{player} &fesse jogador esta limpo!'
+#Menssage para players que usa comandos sem ter permissao!
+Sem_Permissao: '&4Voce nao tem permissao para usar esse comando'
+#Defina uma permissao personalizada a seu gosto
+Permissao: 'permission.op'
+#Comando pra banir o cara quando ele desconetar sem ser liberado.
+Comando_Ban: 'ban {player} &aDesconectou sem passar tela'

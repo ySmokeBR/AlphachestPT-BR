@@ -1,0 +1,9 @@
+name: yTelaBR_
+version: 1.7
+main: me.ysmokebr.ytelabr.main
+
+commands:
+   prender:
+    description: comando usado para pedir tela ao player!
+   liberar:
+    description: comando usado para pedir tela ao player!
